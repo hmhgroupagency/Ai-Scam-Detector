@@ -197,44 +197,53 @@ body {
     color: #fff;
   }
 
-/* Style for the button */
+/* Style untuk tombol gambar */
 .scam-detector-button {
-  display: inline-flex;
-  align-items: center;
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #4A90E2;
-  padding: 12px 20px;
-  border-radius: 25px;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Ukuran awal tombol */
+    transition: transform 0.2s;
 }
 
-/* Hover effect for button */
+.scam-detector-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opsional, tambahkan jika ingin gambar tombol memiliki sudut membulat */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
 .scam-detector-button:hover {
-  background-color: #3a7cb9;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Efek memperbesar saat hover */
 }
 
-/* Style for animated icon */
-.animated-icon {
-  margin-left: 8px;
-  font-size: 16px;
-  animation: zoom-animation 1.5s infinite ease-in-out;
+.scam-detector-button:active {
+    transform: scale(0.98); /* Efek saat ditekan */
 }
 
-/* Keyframes for zoom in and out animation */
-@keyframes zoom-animation {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .scam-detector-button {
+        width: 120px; /* Mengurangi ukuran tombol di layar kecil */
+    }
 }
+
+/* Style untuk gambar utama */
+.main-image {
+    display: block;
+    max-width: 50%; /* Agar gambar responsif mengikuti lebar layar */
+    height: auto;
+    margin: 20px auto; /* Memberikan jarak di atas dan bawah gambar serta memusatkannya */
+    border-radius: 8px; /* Opsional, tambahkan jika ingin sudut membulat */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-image {
+        max-width: 90%; /* Mengurangi ukuran pada layar lebih kecil */
+    }
+}
+
 
 
 /* 
@@ -291,12 +300,12 @@ header
 }
 
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #000000!important;
 }
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #000000!important;
 }
 
 .background-header .main-nav .nav li:hover a {
@@ -308,9 +317,7 @@ header
 }
 
 .header-area {
-  background-color: rgba(250,250,250,0.15);
   position: absolute;
-  top: 40px;
   left: 0;
   right: 0;
   z-index: 100;
@@ -327,7 +334,7 @@ header
 
 .header-area .main-nav .logo {
   line-height: 100px;
-  color: #fff;
+  color: #000000;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -374,7 +381,7 @@ header
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: #fff;
+  color: #000000;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -387,7 +394,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #f5a425!important;
+  color: #ff0009!important;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -412,7 +419,7 @@ header
 }
 
 .background-header .main-nav .nav li.has-sub:after {
-  color: #1e1e1e;
+  color: #000000;
 }
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu {
@@ -494,7 +501,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #000000;
   display: block;
   position: absolute;
   width: 30px;
@@ -505,7 +512,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -514,7 +521,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #000000;
   display: block;
   position: absolute;
   width: 30px;
@@ -525,7 +532,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -566,11 +573,11 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -578,11 +585,11 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 .header-area.header-sticky {
@@ -594,7 +601,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #f5a425;
+  color: #ff0009;
 }
 
 @media (max-width: 1200px) {
@@ -609,18 +616,18 @@ header
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
-    color: #1e1e1e;
+    color: #000000;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #f5a425!important;
+    color: #ff0009!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: white;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -741,7 +748,6 @@ banner
 
 .video-overlay {
   position: absolute;
-  background-color: rgba(31,39,43,0.75);
   top: 0;
   left: 0;
   bottom: 0;
@@ -753,6 +759,7 @@ banner
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  padding: 0 10px 0 0;
 }
 
 .main-banner .caption h6 {
@@ -781,9 +788,9 @@ banner
 }
 
 .main-banner .caption p {
-  color: #fff;
-  font-size: 14px;
-  max-width: 570px;
+  color: #545454;
+  font-size: 12px;
+  padding: 0 20px 0 20px;
 }
 
 .main-banner .caption .main-button-red {
@@ -902,7 +909,7 @@ services
 .services .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #1e1e1e;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
@@ -941,7 +948,7 @@ services
 .services .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #1e1e1e;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
@@ -950,6 +957,18 @@ services
   height: 50px;
   border-radius: 50%;
   line-height: 50px;
+}
+
+.judul {
+  color: #000000; 
+  text-align: center;
+  font-weight: 600;
+}
+
+.subjudul {
+  color: #545454;
+  text-align: center;
+  font-size: 10px;
 }
 
 
@@ -1269,7 +1288,7 @@ section.our-courses {
 .our-courses .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #1e1e1e;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
@@ -1308,7 +1327,7 @@ section.our-courses {
 .our-courses .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #1e1e1e;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
