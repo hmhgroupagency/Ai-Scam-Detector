@@ -199,49 +199,49 @@ body {
 
 /* Style untuk tombol gambar */
 .scam-detector-button {
-    display: block;
-    margin: 0 auto;
-    width: 200px; /* Ukuran awal tombol */
-    transition: transform 0.2s;
+  display: block;
+  margin: 0 auto;
+  width: 200px; /* Ukuran awal tombol */
+  transition: transform 0.2s;
 }
 
 .scam-detector-button img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Opsional, tambahkan jika ingin gambar tombol memiliki sudut membulat */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Opsional, tambahkan jika ingin gambar tombol memiliki sudut membulat */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
 
 .scam-detector-button:hover {
-    transform: scale(1.05); /* Efek memperbesar saat hover */
+  transform: scale(1.05); /* Efek memperbesar saat hover */
 }
 
 .scam-detector-button:active {
-    transform: scale(0.98); /* Efek saat ditekan */
+  transform: scale(0.98); /* Efek saat ditekan */
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-    .scam-detector-button {
-        width: 170px; /* Mengurangi ukuran tombol di layar kecil */
-    }
+  .scam-detector-button {
+    width: 170px; /* Mengurangi ukuran tombol di layar kecil */
+  }
 }
 
 /* Style untuk gambar utama */
 .main-image {
-    display: block;
-    max-width: 50%; /* Agar gambar responsif mengikuti lebar layar */
-    height: auto;
-    margin: 20px auto; /* Memberikan jarak di atas dan bawah gambar serta memusatkannya */
-    border-radius: 8px; /* Opsional, tambahkan jika ingin sudut membulat */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  display: block;
+  max-width: 50%; /* Agar gambar responsif mengikuti lebar layar */
+  height: auto;
+  margin: 20px auto; /* Memberikan jarak di atas dan bawah gambar serta memusatkannya */
+  border-radius: 8px; /* Opsional, tambahkan jika ingin sudut membulat */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .main-image {
-        max-width: 90%; /* Mengurangi ukuran pada layar lebih kecil */
-    }
+  .main-image {
+    max-width: 90%; /* Mengurangi ukuran pada layar lebih kecil */
+  }
 }
 
 
@@ -252,44 +252,44 @@ header
 --------------------------------------------- 
 */
 
-  .sub-header {
-    background-color: #1f272b;
-    position: relative;
-    z-index: 1111;
-  }
+.sub-header {
+  background-color: #1f272b;
+  position: relative;
+  z-index: 1111;
+}
 
-  .sub-header .left-content p {
-    color: #fff;
-    padding: 8px 0px;
-    font-size: 13px;
-  }
+.sub-header .left-content p {
+  color: #fff;
+  padding: 8px 0px;
+  font-size: 13px;
+}
 
-  .sub-header .right-icons {
-    text-align: right;
-    padding: 8px 0px;
-  }
+.sub-header .right-icons {
+  text-align: right;
+  padding: 8px 0px;
+}
 
-  .sub-header .right-icons ul li {
-    display: inline-block;
-    margin-left: 15px;
-  }
+.sub-header .right-icons ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
 
-  .sub-header .right-icons ul li a {
-    color: #fff;
-    font-size: 14px;
-    transition: all .3s;
-  }
+.sub-header .right-icons ul li a {
+  color: #fff;
+  font-size: 14px;
+  transition: all .3s;
+}
 
-  .sub-header .right-icons ul li a:hover {
-    color: #f5a425;
-  }
+.sub-header .right-icons ul li a:hover {
+  color: #f5a425;
+}
 
-  .sub-header .left-content p em {
-   font-style: normal;
-   color: #f5a425;
- }
+.sub-header .left-content p em {
+ font-style: normal;
+ color: #f5a425;
+}
 
- .background-header {
+.background-header {
   background-color: #fff!important;
   height: 80px!important;
   position: fixed!important;
@@ -399,7 +399,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #f5a425!important;
+  color: #ff0009!important;
   opacity: 1;
 }
 
@@ -720,6 +720,7 @@ header
 }
 
 
+
 /* 
 ---------------------------------------------
 banner
@@ -789,7 +790,7 @@ banner
 
 .main-banner .caption p {
   color: #545454;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0 20px 0 20px;
 }
 
@@ -809,7 +810,112 @@ banner
 
 }
 
+main {
+  text-align: center;
+  padding: 20px 0;
+}
 
+main h1 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 0 20px 0 20px;
+  color: #000000;
+}
+
+main h1 .highlight {
+  color: red;
+}
+
+main p {
+  color: #545454;
+  font-size: 13px;
+  padding: 0 20px 0 20px;
+}
+
+.featured-news h2, .all-news h2 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 25px;
+  color: #545454;
+  text-align: left;
+}
+
+.slider {
+  margin: 0 0;
+}
+
+.news-card {
+  background-color: #D6D6D6;
+  padding: 10px 10px 0px 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 0 10px; /* Added margin to create spacing between slides */
+}
+
+.news-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Set aspect ratio to 16:9 */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.news-card p {
+  font-size: 12px; /* Reduced font size to 12px */
+  margin-top: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.all-news {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+}
+
+.news-item img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.news-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.news-item p strong {
+  color: red;
+}
+
+/* Style for slick arrows */
+.slick-prev, .slick-next {
+  color: #ff0009;
+  font-size: 24px;
+  line-height: 1;
+  opacity: 0.75;
+  z-index: 2;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #ff0009;
+  opacity: 1;
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -20px;
+}
 /*
 ---------------------------------------------
 services
