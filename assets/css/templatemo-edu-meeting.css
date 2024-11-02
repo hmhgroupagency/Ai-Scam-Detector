@@ -201,7 +201,7 @@ body {
 .scam-detector-button {
     display: block;
     margin: 0 auto;
-    width: 150px; /* Ukuran awal tombol */
+    width: 200px; /* Ukuran awal tombol */
     transition: transform 0.2s;
 }
 
@@ -223,7 +223,7 @@ body {
 /* Responsive Styles */
 @media (max-width: 600px) {
     .scam-detector-button {
-        width: 120px; /* Mengurangi ukuran tombol di layar kecil */
+        width: 170px; /* Mengurangi ukuran tombol di layar kecil */
     }
 }
 
