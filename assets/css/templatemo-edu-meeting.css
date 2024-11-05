@@ -191,11 +191,142 @@ body {
     margin-bottom: 50px; 
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(250,250,250,0.15);
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
   }
+/* Styling form posting laporan */
+.form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Grid layout for form fields */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Styling input fields, select, textarea, and button */
+.form-container input,
+.form-container select,
+.form-container textarea,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Styling input file (upload button) */
+.form-container input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Styling for submit button */
+.form-container button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    grid-column: 1 / -1; /* Full-width button on grid */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+/* Styling untuk slider laporan */
+#reportSliderWrapper {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 20px auto 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#reportSlider {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 10px;
+    width: 100%; /* Ensure slider fills the container */
+}
+
+.report-item {
+    min-width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.report-item h3 {
+    color: red;
+    margin-top: 0;
+}
+
+.report-item p {
+    margin: 5px 0;
+}
+
+.report-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .form-container h2 {
+        font-size: 1.2rem;
+    }
+    .form-grid {
+        grid-template-columns: 1fr; /* Change to single column on mobile */
+    }
+    #reportSliderWrapper {
+        max-width: 100%; /* Ensure slider adjusts to screen size on mobile */
+    }
+}
+
+
+/* find start */
+.find h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+/* find end */
 
 /* Style untuk tombol gambar */
 .scam-detector-button {
@@ -314,6 +445,18 @@ header
 
 .background-header .nav li a.active {
   color: #fb5849!important;
+}
+
+.logo img {
+    width: 100%;      /* agar ukurannya responsif */
+    max-width: 100px; /* batas maksimum ukuran logo */
+    height: auto;     /* mempertahankan aspek rasio gambar */
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 100px; /* logo lebih kecil di layar sempit */
+    }
 }
 
 .header-area {
@@ -967,6 +1110,11 @@ main p {
 
 .news-content {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: auto;
 }
 
 .news-content span {
@@ -2093,7 +2241,7 @@ responsive
   }
 
   section.upcoming-meetings {
-    padding-top: 400px;
+    padding-top: 20px;
   }
 
   section.upcoming-meetings .categories {
